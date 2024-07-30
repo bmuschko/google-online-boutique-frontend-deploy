@@ -11,6 +11,15 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+#
+# To be able to pull the image from a private ECR registry, you need to provide the credentials and store them in a Secret.
+#
+# Generate the Secret with the following command. Make sure to change the registry reference.
+#
+# kubectl create secret docker-registry regcred \
+# --docker-server=216423885123.dkr.ecr.us-west-2.amazonaws.com \
+# --docker-username=AWS \
+# --docker-password=$(aws ecr get-login-password)
 
 apiVersion: apps/v1
 kind: Deployment
