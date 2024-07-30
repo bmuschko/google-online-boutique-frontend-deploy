@@ -44,7 +44,7 @@ spec:
                 - ALL
             privileged: false
             readOnlyRootFilesystem: true
-          image: bmuschko/google-online-boutique-frontend:f912e16
+          image: 216423885123.dkr.ecr.us-west-2.amazonaws.com/online-boutique/frontend:f912e16
           ports:
           - containerPort: 8080
           readinessProbe:
